@@ -4,11 +4,8 @@
   "description": "kit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "dev": "webpack --mode=development",
-    "prod": "webpack --mode=production",
-    "server": "webpack serve --mode=development"
+    "dev": "webpack serve --mode=development",
+    "prod": "webpack --mode=production"
   },
   "author": "siemens",
   "license": "ISC",
