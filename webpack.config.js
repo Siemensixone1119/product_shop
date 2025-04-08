@@ -14,6 +14,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/,
+        use: ['html-loader']
+      },
+      {
         test: /\.scss$/i,
         use: [
           process.env.NODE_ENV === "development"
@@ -76,7 +80,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./development/index.html",
+      template: "./development/pages/main.html",
     }),
     new MiniCssExtractPlugin({
       filename: "styles.css",
