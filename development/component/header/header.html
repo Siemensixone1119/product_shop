@@ -1,41 +1,601 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <img src="../../assets/image/svg/logo.svg" alt="">
-    <p>СЕВЕРЯНОЧКА</p>
+  </head>
+  <body>
+    <header class="header container">
+        <a href="#" class="header__logo"><img src="../../assets/image/svg/logo.svg" alt="" />
+          <p>СЕВЕРЯНОЧКА</p>
+        </a>
+      
 
-    <a href="">
-        <img src="../../assets/image/svg/menu.svg" alt="">
-        <p>Каталог</p>
-    </a>
+      <div class="header__search">
+        <a href="" class="header__catalog">
+          <img src="../../assets/image/svg/menu.svg" alt="" />
+          <p>Каталог</p>
+        </a>
 
-    <input type="text" placeholder="Найти товар">
+        <input type="text" placeholder="Найти товар" />
+      </div>
 
-    <nav>
-        <ul>
+      <div class="header__alexnav">
+        <nav>
+          <ul class="header__nav">
             <li>
-                <img src="../../assets/image/svg//favorites.svg" alt="">
-                <p>Избранное</p>
+              <img src="../../assets/image/svg//favorites.svg" alt="" />
+              <p>Избранное</p>
             </li>
             <li>
-                <img src="../../assets/image/svg/order.svg" alt="">
-                <p>Заказы</p>
+              <img src="../../assets/image/svg/order.svg" alt="" />
+              <p>Заказы</p>
             </li>
             <li>
-                <img src="../../assets/image/svg/bascet.svg" alt="">
-                <p>Корзина</p>
+              <img src="../../assets/image/svg/bascet.svg" alt="" />
+              <p>Корзина</p>
             </li>
-        </ul>
-
-        <div>
-            <img src="../../assets/image/jpeg/avatar.jpg" alt="1">
+          </ul>
+        </nav>
+          <div class="header__alex">
+            <img src="../../assets/image/jpeg/avatar.jpg" alt="1" />
             <p>Алексей</p>
+          </div>
+        
+      </div>
+    </header>
+    <main>
+      <section>
+        <img src="../../assets/image/jpeg/hero_img.jpg" alt="xuy" />
+        <h1>Доставка бесплатно от 1000 ₽</h1>
+      </section>
+      <section>
+        <h2>Акции</h2>
+        <div>
+          <p>Все акции</p>
+          <img src="../../assets/image/svg/arrow.svg" alt="pohuy" />
         </div>
-    </nav>
-</body>
+        <ul>
+          <!-- Тут начинается первая картинка -->
+          <li>
+            <div>
+              <div>
+                <img src="../../assets/image/svg/favorites.svg" alt="ura" />
+              </div>
+              <p>-50%</p>
+            </div>
+            <div>
+              <p>44,50 ₽</p>
+              <p>С картой</p>
+              <p>50,50 ₽</p>
+              <p>Обычная</p>
+              <h3>Г/Ц Блинчики с мясом вес, Россия</h3>
+              <ul>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+              </ul>
+              <button>В корзину</button>
+            </div>
+          </li>
+          <!-- Тут заканчивается первая картинка и начинается вторая -->
+          <li>
+            <div>
+              <div>
+                <img src="../../assets/image/svg/favorites.svg" alt="ura" />
+              </div>
+              <p>-50%</p>
+            </div>
+            <div>
+              <p>44,50 ₽</p>
+              <p>С картой</p>
+              <p>50,50 ₽</p>
+              <p>Обычная</p>
+              <h3>Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</h3>
+              <ul>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+              </ul>
+              <button>В корзину</button>
+            </div>
+          </li>
+          <!-- Тут закончилась вторая картинка и должна начаться третья -->
+          <li>
+            <div>
+              <div>
+                <img src="../../assets/image/svg/favorites.svg" alt="ura" />
+              </div>
+              <p>-50%</p>
+            </div>
+            <div>
+              <p>44,50 ₽</p>
+              <p>С картой</p>
+              <p>50,50 ₽</p>
+              <p>Обычная</p>
+              <h3>Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h3>
+              <ul>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+              </ul>
+              <button>В корзину</button>
+            </div>
+          </li>
+          <!-- Тут заканчивается третья картинка и начинается четвертая -->
+          <li>
+            <div>
+              <div>
+                <img src="../../assets/image/svg/favorites.svg" alt="ura" />
+              </div>
+              <p>-50%</p>
+            </div>
+            <div>
+              <p>44,50 ₽</p>
+              <p>С картой</p>
+              <p>50,50 ₽</p>
+              <p>Обычная</p>
+              <h3>Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</h3>
+              <ul>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+              </ul>
+              <button>В корзину</button>
+            </div>
+          </li>
+          <!-- Тут заканчивается четвертая картинка -->
+        </ul>
+      </section>
+      <!-- Ща начнется секция Новинки -->
+      <selection>
+        <h2>Новинки</h2>
+        <div>
+          <p>Все новинки</p>
+          <img src="../../assets/image/svg/arrow.svg" alt="pohuy" />
+        </div>
+        <ul>
+          <li>
+            <div>
+              <div>
+                <img src="../../assets/image/svg/favorites.svg" alt="ura" />
+              </div>
+            </div>
+            <div>
+              <p>599,99 ₽</p>
+              <h3>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+              <ul>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+              </ul>
+              <button>В корзину</button>
+            </div>
+          </li>
+          <!-- Тут заканчивается первая картинка и начинается вторая -->
+          <li>
+            <div>
+              <div>
+                <img src="../../assets/image/svg/favorites.svg" alt="ura" />
+              </div>
+            </div>
+            <div>
+              <p>44,50 ₽</p>
+              <h3>Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h3>
+              <ul>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+              </ul>
+              <button>В корзину</button>
+            </div>
+          </li>
+          <!-- Тут заканчивается вторая и начинается третья картинка -->
+          <li>
+            <div>
+              <div>
+                <img src="../../assets/image/svg/favorites.svg" alt="ura" />
+              </div>
+            </div>
+            <div>
+              <p>44,50 ₽</p>
+              <h3>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+              <ul>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+              </ul>
+              <button>В корзину</button>
+            </div>
+          </li>
+          <!-- Заканчивается третья картинка и начинается четвертая -->
+          <li>
+            <div>
+              <div>
+                <img src="../../assets/image/svg/favorites.svg" alt="ura" />
+              </div>
+            </div>
+            <div>
+              <p>44,50 ₽</p>
+              <h3>Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</h3>
+              <ul>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+              </ul>
+              <button>В корзину</button>
+            </div>
+          </li>
+        </ul>
+      </selection>
+      <!-- Тут закончится секция Новинки -->
+      <!-- Начинается секция Покупали раньше-->
+      <section>
+        <h2>Покупали раньше</h2>
+        <div>
+          <p>Все покупки</p>
+          <img src="../../assets/image/svg/arrow.svg" alt="pohuy" />
+        </div>
+        <ul>
+          <li>
+            <div>
+              <div>
+                <img src="../../assets/image/svg/favorites.svg" alt="ura" />
+              </div>
+            </div>
+            <div>
+              <p>77,99 ₽</p>
+              <h3>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+              <ul>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+              </ul>
+              <button>В корзину</button>
+            </div>
+          </li>
+          <!-- Сделал первую картинку и начинается вторая -->
+          <li>
+            <div>
+              <div>
+                <img src="../../assets/image/svg/favorites.svg" alt="ura" />
+              </div>
+            </div>
+            <div>
+              <p>159,99 ₽</p>
+              <h3>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+              <ul>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+              </ul>
+              <button>В корзину</button>
+            </div>
+          </li>
+          <!-- Закончилась вторая и начинается третья -->
+          <li>
+            <div>
+              <div>
+                <img src="../../assets/image/svg/favorites.svg" alt="ura" />
+              </div>
+            </div>
+            <div>
+              <p>599,99 ₽</p>
+              <h3>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+              <ul>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+              </ul>
+              <button>В корзину</button>
+            </div>
+          </li>
+          <!-- Сделал третью картинку и начал четвертую -->
+          <li>
+            <div>
+              <div>
+                <img src="../../assets/image/svg/favorites.svg" alt="ura" />
+              </div>
+            </div>
+            <div>
+              <p>49,39 ₽</p>
+              <h3>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+              <ul>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+                <li>
+                  <img src="../../assets/image/svg/star.svg" alt="you" />
+                </li>
+              </ul>
+              <button>В корзину</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Заканчивается секция Покупали раньше -->
+      <!-- Специальные предложения -->
+      <section>
+        <h2>Специальные предложения</h2>
+        <ul>
+          <li>
+            <p>Оформите карту «Северяночка»</p>
+            <p>И получайте бонусы при покупке в магазинах и на сайте</p>
+            <img src="../../assets/image/jpeg/spec_1.jpg" alt="uoi" />
+          </li>
+          <li>
+            <p>Покупайте акционные товары</p>
+            <p>И получайте вдвое больше бонусов</p>
+            <img src="../../assets/image/jpeg/spec_2.jpg" alt="uoi" />
+          </li>
+        </ul>
+      </section>
+      <!-- Закончились специальные предложения -->
+      <section>
+        <h2>Наши магазины</h2>
+        <ul>
+          <li>
+            <input type="radio" name="0" id="1" />
+            <label for="1">п.Щельяюр</label>
+          </li>
+          <li>
+            <input type="radio" name="0" id="2" /><label for="2"
+              >д.Вертеп</label
+            >
+          </li>
+          <li>
+            <input type="radio" name="0" id="3" /><label for="3"
+              >с.Краснобор</label
+            >
+          </li>
+          <li>
+            <input type="radio" name="0" id="4" /><label for="4">д.Диюр</label>
+          </li>
+        </ul>
+        <!-- Дальше должна быть карта -->
+        <div></div>
+        <!-- Карта закончилась -->
+      </section>
+      <!-- Секция Статьи -->
+      <section>
+        <h2>Статьи</h2>
+        <div>
+          <p>Все статьи</p>
+          <img src="../../assets/image/svg/arrow.svg" alt="pohuy" />
+        </div>
+        <ul>
+          <li>
+            <div></div>
+            <div>
+              <p>05.03.2025</p>
+              <h3>
+                Режим использования масок и перчаток на территории магазинов
+              </h3>
+              <p>
+                Подробная информация о режимах использования масок и перчаток на
+                территории магазинов "ЛЕНТА". Информация обновляется каждый
+                будний день.
+              </p>
+              <a>Подробнее</a>
+            </div>
+          </li>
+          <!-- Первая закончилась началась вторая -->
+          <li>
+            <div></div>
+            <div>
+              <p>05.03.2025</p>
+              <h3>Весеннее настроение для каждой</h3>
+              <p>
+                8 Марта – это не просто Международный женский день, это ещё день
+                тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.
+              </p>
+              <a>Подробнее</a>
+            </div>
+          </li>
+          <!-- Закончилась вторая начинается третья -->
+          <li>
+            <div></div>
+            <div>
+              <p>22.02.2025</p>
+              <h3>ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!</h3>
+              <p>
+                Голосуйте за любимые категории, выбирайте категорию-победителя в
+                мобильном приложении и получайте кешбэк 10% баллами в апреле!
+              </p>
+              <a>Подробнее</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Секция Статьи закончилась -->
+      <footer>
+        <img src="../../assets/image/svg/logo.svg" alt="" />
+        <p>СЕВЕРЯНОЧКА</p>
+        <ul>
+          <li>
+            <a>О компани</a>
+          </li>
+          <li>
+            <a>Контакты</a>
+          </li>
+          <li>
+            <a>Вакансии</a>
+          </li>
+          <li>
+            <a>Статьи</a>
+          </li>
+          <li>
+            <a>Политика обработки персональных данных</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img src="../../assets/image/svg/facebook.svg" />
+          </li>
+          <li>
+            <img src="../../assets/image/svg/vkontakte.svg" />
+          </li>
+          <li>
+            <img src="../../assets/image/svg/instagram.svg" />
+          </li>
+          <li>
+            <img src="../../assets/image/svg/ok.svg" />
+          </li>
+        </ul>
+        <div>
+          <img src="../../assets/image/svg/phone.svg" />
+          <p>8 800 777 33 33</p>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
